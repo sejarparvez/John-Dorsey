@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn {
+  @apply rounded-full bg-main-100 px-6 py-1.5 font-bold text-white hover:bg-main-200;
+}
+
+body {
+  @apply bg-[#f6f7fb];
+}
+
+
+.animate-bar {
+  animation: progress-bar 1.5s ease-in-out;
+}
+
+@keyframes progress-bar {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
